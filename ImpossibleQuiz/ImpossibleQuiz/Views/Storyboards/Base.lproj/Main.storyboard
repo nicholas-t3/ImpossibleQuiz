@@ -13,49 +13,120 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="HYJ-s3-cw0">
             <objects>
-                <viewController id="DvR-Xs-paZ" sceneMemberID="viewController">
+                <viewController id="DvR-Xs-paZ" customClass="QuestionViewController" customModule="ImpossibleQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zns-Kh-5aJ">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1c-Mw-AUT">
-                                <rect key="frame" x="71" y="31" width="32" height="96"/>
+                                <rect key="frame" x="72" y="16" width="32" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="96"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="answer_box_left" translatesAutoresizingMaskIntoConstraints="NO" id="fKJ-SN-R4F">
-                                <rect key="frame" x="60" y="200" width="335" height="106"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="answer_box_left" translatesAutoresizingMaskIntoConstraints="NO" id="QCi-lm-ITA">
-                                <rect key="frame" x="60" y="302" width="335" height="106"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many holes in a polo?" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3d-PK-gBZ">
-                                <rect key="frame" x="137" y="-7" width="737" height="172"/>
+                                <rect key="frame" x="133" y="2" width="737" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="74"/>
+                                <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="50"/>
                                 <color key="textColor" systemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lives: 3" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXY-AY-hG9">
+                                <rect key="frame" x="44" y="336.5" width="135.5" height="56.5"/>
+                                <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="56"/>
+                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uqd-dv-Xdv">
+                                <rect key="frame" x="125" y="123.5" width="646" height="196.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iuU-Xf-udG">
+                                        <rect key="frame" x="0.0" y="0.0" width="323" height="196.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afG-Tr-zXh">
+                                                <rect key="frame" x="0.0" y="0.0" width="323" height="98"/>
+                                                <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="60"/>
+                                                <state key="normal" title="Button Title" backgroundImage="answer_box_left">
+                                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="firstButtonTapped:" destination="DvR-Xs-paZ" eventType="touchUpInside" id="aUv-gI-kQi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eux-ju-XE5">
+                                                <rect key="frame" x="0.0" y="98" width="323" height="98.5"/>
+                                                <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="60"/>
+                                                <state key="normal" title="Button Title" backgroundImage="answer_box_left">
+                                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="thirdButtonTapped:" destination="DvR-Xs-paZ" eventType="touchUpInside" id="JxS-g6-AUK"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QZs-lU-naK">
+                                        <rect key="frame" x="323" y="0.0" width="323" height="196.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioT-Zu-cNO">
+                                                <rect key="frame" x="0.0" y="0.0" width="323" height="98"/>
+                                                <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="60"/>
+                                                <state key="normal" title="Button Title" backgroundImage="answer_box_right">
+                                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="secondButtonTapped:" destination="DvR-Xs-paZ" eventType="touchUpInside" id="pAR-SN-YHP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ii-tW-1dZ">
+                                                <rect key="frame" x="0.0" y="98" width="323" height="98.5"/>
+                                                <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="60"/>
+                                                <state key="normal" title="ButtonTitle" backgroundImage="answer_box_right">
+                                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="fourthButtonTapped:" destination="DvR-Xs-paZ" eventType="touchUpInside" id="eBZ-Ct-bPu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Wkt-DH-FSI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uqd-dv-Xdv" firstAttribute="centerX" secondItem="Wkt-DH-FSI" secondAttribute="centerX" id="4sx-5v-rSQ"/>
+                            <constraint firstItem="uqd-dv-Xdv" firstAttribute="height" secondItem="Wkt-DH-FSI" secondAttribute="height" multiplier="0.5" id="9n2-gy-YVS"/>
+                            <constraint firstItem="uqd-dv-Xdv" firstAttribute="centerY" secondItem="Wkt-DH-FSI" secondAttribute="centerY" constant="25" id="Pqk-fX-vKq"/>
+                            <constraint firstItem="SXY-AY-hG9" firstAttribute="leading" secondItem="Wkt-DH-FSI" secondAttribute="leading" id="SvV-6c-RpO"/>
+                            <constraint firstItem="Wkt-DH-FSI" firstAttribute="bottom" secondItem="SXY-AY-hG9" secondAttribute="bottom" id="XFF-M9-6xY"/>
+                            <constraint firstItem="uqd-dv-Xdv" firstAttribute="width" secondItem="Wkt-DH-FSI" secondAttribute="width" multiplier="0.8" id="fqg-TI-9Zc"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ZRb-hG-OiS"/>
+                    <connections>
+                        <outlet property="firstButton" destination="afG-Tr-zXh" id="m9N-mL-Uzz"/>
+                        <outlet property="fourthButton" destination="4ii-tW-1dZ" id="jVn-HA-vAS"/>
+                        <outlet property="livesLabel" destination="SXY-AY-hG9" id="NgT-Bk-lQK"/>
+                        <outlet property="questionLabel" destination="e3d-PK-gBZ" id="xwx-HZ-OcM"/>
+                        <outlet property="questionNumberLabel" destination="o1c-Mw-AUT" id="F97-OB-jIh"/>
+                        <outlet property="secondButton" destination="ioT-Zu-cNO" id="paf-Zs-72I"/>
+                        <outlet property="thirdButton" destination="eux-ju-XE5" id="TMR-yX-vvy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9he-XO-HSj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-204.24107142857142" y="918.84057971014499"/>
         </scene>
-        <!--View Controller-->
+        <!--Intro View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImpossibleQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IntroViewController" customModule="ImpossibleQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,20 +135,41 @@
                                 <rect key="frame" x="210" y="0.0" width="476" height="207"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="LpH-1B-UvY">
-                                <rect key="frame" x="67" y="214" width="762" height="200"/>
+                                <rect key="frame" x="67" y="214" width="762" height="160"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="easy_button" translatesAutoresizingMaskIntoConstraints="NO" id="EAR-Tp-laW">
-                                        <rect key="frame" x="0.0" y="0.0" width="243.5" height="200"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medium_button" translatesAutoresizingMaskIntoConstraints="NO" id="iF8-RJ-X8N">
-                                        <rect key="frame" x="259.5" y="0.0" width="243" height="200"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hard_button" translatesAutoresizingMaskIntoConstraints="NO" id="4h3-eO-Qtv">
-                                        <rect key="frame" x="518.5" y="0.0" width="243.5" height="200"/>
-                                    </imageView>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgA-Dc-W6t">
+                                        <rect key="frame" x="0.0" y="0.0" width="243.5" height="160"/>
+                                        <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="60"/>
+                                        <state key="normal" title="Easy" backgroundImage="easy_button">
+                                            <color key="titleColor" systemColor="systemGreenColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="DvR-Xs-paZ" kind="show" id="plr-Le-5EI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2A-Hc-Zzh">
+                                        <rect key="frame" x="259.5" y="0.0" width="243" height="160"/>
+                                        <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="50"/>
+                                        <state key="normal" title="Medium" backgroundImage="medium_button">
+                                            <color key="titleColor" red="1" green="0.85766573561489623" blue="0.072257341493877969" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="DvR-Xs-paZ" kind="show" id="dnT-QS-kxX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9e-94-BjR">
+                                        <rect key="frame" x="518.5" y="0.0" width="243.5" height="160"/>
+                                        <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="60"/>
+                                        <state key="normal" title="Hard" backgroundImage="hard_button">
+                                            <color key="titleColor" systemColor="systemRedColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="DvR-Xs-paZ" kind="show" id="cga-BR-9dD"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="vyP-gM-6pA"/>
+                                    <constraint firstAttribute="height" constant="160" id="vyP-gM-6pA"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -96,12 +188,24 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="N7D-l3-Joy">
+                    <rect key="frame" x="0.0" y="0.0" width="178.5" height="200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="60"/>
+                    <state key="normal" title="Easy" backgroundImage="easy_button">
+                        <color key="titleColor" systemColor="systemGreenColor"/>
+                    </state>
+                </button>
             </objects>
             <point key="canvasLocation" x="-204.24107142857142" y="88.405797101449281"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="plr-Le-5EI"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="answer_box_left" width="792" height="267"/>
+        <image name="answer_box_right" width="792" height="267"/>
         <image name="easy_button" width="714" height="348"/>
         <image name="hard_button" width="714" height="348"/>
         <image name="impossible_quiz_logo" width="1472" height="594"/>
@@ -111,6 +215,15 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
