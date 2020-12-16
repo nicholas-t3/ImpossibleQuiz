@@ -12,13 +12,11 @@ class Question {
     let question: String
     let answers: [String]
     let correctAnswer: Int
-    var wrongAnswer: Int
     
-    init(questionNumber: Int, question: String, answers: [String], correctAnswer: Int, wrongAnswer: Int) {
+    init(questionNumber: Int, question: String, answers: [String], correctAnswer: Int) {
         self.questionNumber = questionNumber
         self.question = question
         self.answers = answers
         self.correctAnswer = correctAnswer
-        self.wrongAnswer = wrongAnswer
     }
 }//End of class

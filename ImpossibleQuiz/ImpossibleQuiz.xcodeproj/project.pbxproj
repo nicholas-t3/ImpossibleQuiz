@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		688E1867258A8E6C00661CCE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688E1866258A8E6C00661CCE /* Question.swift */; };
+		688E186B258A954900661CCE /* QuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688E186A258A954900661CCE /* QuestionController.swift */; };
 		E1C4CC66258A88B200580EC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C4CC65258A88B200580EC2 /* AppDelegate.swift */; };
 		E1C4CC68258A88B200580EC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C4CC67258A88B200580EC2 /* SceneDelegate.swift */; };
 		E1C4CC6D258A88B200580EC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1C4CC6B258A88B200580EC2 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		688E1866258A8E6C00661CCE /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		688E186A258A954900661CCE /* QuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionController.swift; sourceTree = "<group>"; };
 		E1C4CC62258A88B200580EC2 /* ImpossibleQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImpossibleQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C4CC65258A88B200580EC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1C4CC67258A88B200580EC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				E1C4CC65258A88B200580EC2 /* AppDelegate.swift */,
+				688E186A258A954900661CCE /* QuestionController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				E1C4CC9D258A9E3300580EC2 /* QuestionViewController.swift in Sources */,
 				E1C4CC66258A88B200580EC2 /* AppDelegate.swift in Sources */,
 				E1C4CC68258A88B200580EC2 /* SceneDelegate.swift in Sources */,
+				688E186B258A954900661CCE /* QuestionController.swift in Sources */,
 				E1C4CC8E258A9A0900580EC2 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
