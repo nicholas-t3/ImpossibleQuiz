@@ -13,6 +13,7 @@ class QuestionViewController: UIViewController {
     var question: Question?
     var questionIndex = 0
     var mode: Int?
+    var crash: String?
     var dataSource: [Question] {
         switch mode {
         case 0:
@@ -79,9 +80,12 @@ class QuestionViewController: UIViewController {
     
     //MARK: - Methods
     func youLose(){
-        presentLostAlert()
- 
-       
+        QuestionController.sharedInstance.amountOfLosses += 1
+        if QuestionController.sharedInstance.amountOfLosses == 5 {
+            presentLostAlert()
+        } else {
+            presentLostAlert()
+        }
         
     }
     
@@ -93,6 +97,15 @@ class QuestionViewController: UIViewController {
         alertController.addAction(okAction)
         present(alertController, animated: true, completion: nil)
     }
+    
+//    func presentCrashAlert(){
+//        let alertController = UIAlertController(title: "Uh-oh", message: "You lost so much that the game broke.", preferredStyle: .alert)
+//        let okAction = UIAlertAction(title: "Bye?", style: .default) { (action) in
+//            self.questionLabel.text = self.crash!
+//        }
+//        alertController.addAction(okAction)
+//        present(alertController, animated: true, completion: nil)
+//    }
     
     func loadQuestion(){
         question = dataSource[questionIndex]
@@ -125,7 +138,5 @@ class QuestionViewController: UIViewController {
             lives -= 1
         }
     }
-    
-    
     
 } //End of class

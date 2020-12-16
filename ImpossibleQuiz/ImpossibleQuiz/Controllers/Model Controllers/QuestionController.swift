@@ -11,6 +11,7 @@ class QuestionController {
     
     //Source of Truth
     var questions: [Question] = []
+    var amountOfLosses = 0
     
     //Shared Instance
     static let sharedInstance = QuestionController()
