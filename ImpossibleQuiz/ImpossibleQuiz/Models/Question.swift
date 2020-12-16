@@ -19,4 +19,5 @@ class Question {
         self.answers = answers
         self.correctAnswer = correctAnswer
     }
+    
 }//End of class
