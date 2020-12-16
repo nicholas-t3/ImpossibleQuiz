@@ -36,7 +36,7 @@ class QuestionViewController: UIViewController {
             }
         }
     }
-
+    
     
     // MARK: - Outlets
     @IBOutlet weak var livesLabel: UILabel!
@@ -94,14 +94,14 @@ class QuestionViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
     
-//    func presentCrashAlert(){
-//        let alertController = UIAlertController(title: "Uh-oh", message: "You lost so much that the game broke.", preferredStyle: .alert)
-//        let okAction = UIAlertAction(title: "Bye?", style: .default) { (action) in
-//            self.questionLabel.text = self.crash!
-//        }
-//        alertController.addAction(okAction)
-//        present(alertController, animated: true, completion: nil)
-//    }
+    //    func presentCrashAlert(){
+    //        let alertController = UIAlertController(title: "Uh-oh", message: "You lost so much that the game broke.", preferredStyle: .alert)
+    //        let okAction = UIAlertAction(title: "Bye?", style: .default) { (action) in
+    //            self.questionLabel.text = self.crash!
+    //        }
+    //        alertController.addAction(okAction)
+    //        present(alertController, animated: true, completion: nil)
+    //    }
     
     func loadQuestion(){
         question = dataSource[questionIndex]

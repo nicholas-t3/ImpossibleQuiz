@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -21,14 +21,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1c-Mw-AUT">
-                                <rect key="frame" x="72" y="16" width="32" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1c-Mw-AUT">
+                                <rect key="frame" x="44" y="2" width="31.5" height="96"/>
                                 <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="96"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many holes in a polo?" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3d-PK-gBZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How many holes in a polo?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3d-PK-gBZ">
                                 <rect key="frame" x="133" y="2" width="737" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="50"/>
@@ -102,9 +101,11 @@
                         <constraints>
                             <constraint firstItem="uqd-dv-Xdv" firstAttribute="centerX" secondItem="Wkt-DH-FSI" secondAttribute="centerX" id="4sx-5v-rSQ"/>
                             <constraint firstItem="uqd-dv-Xdv" firstAttribute="height" secondItem="Wkt-DH-FSI" secondAttribute="height" multiplier="0.5" id="9n2-gy-YVS"/>
+                            <constraint firstItem="o1c-Mw-AUT" firstAttribute="leading" secondItem="Wkt-DH-FSI" secondAttribute="leading" id="Jji-rt-72P"/>
                             <constraint firstItem="uqd-dv-Xdv" firstAttribute="centerY" secondItem="Wkt-DH-FSI" secondAttribute="centerY" constant="25" id="Pqk-fX-vKq"/>
                             <constraint firstItem="SXY-AY-hG9" firstAttribute="leading" secondItem="Wkt-DH-FSI" secondAttribute="leading" id="SvV-6c-RpO"/>
                             <constraint firstItem="Wkt-DH-FSI" firstAttribute="bottom" secondItem="SXY-AY-hG9" secondAttribute="bottom" id="XFF-M9-6xY"/>
+                            <constraint firstItem="o1c-Mw-AUT" firstAttribute="top" secondItem="Wkt-DH-FSI" secondAttribute="top" constant="2" id="aPU-hc-eBv"/>
                             <constraint firstItem="uqd-dv-Xdv" firstAttribute="width" secondItem="Wkt-DH-FSI" secondAttribute="width" multiplier="0.8" id="fqg-TI-9Zc"/>
                         </constraints>
                     </view>
@@ -122,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9he-XO-HSj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-267" y="1374"/>
+            <point key="canvasLocation" x="-267.1875" y="1373.913043478261"/>
         </scene>
         <!--Intro View Controller-->
         <scene sceneID="tne-QT-ifu">
