@@ -21,10 +21,10 @@ class QuestionViewController: UIViewController {
             return QuestionController.sharedInstance.mediumQuestion
         case 2:
             return QuestionController.sharedInstance.hardQuestion
-//        case .none:
-//            <#code#>
-//        case .some(_):
-//            <#code#>
+        case .none:
+            return []
+        case .some(_):
+            return []
         }
     }
     var lives = 3 {
@@ -49,7 +49,11 @@ class QuestionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        loadQuestion()
+        firstButton.titleLabel?.adjustsFontForContentSizeCategory = true
+        secondButton.titleLabel?.adjustsFontForContentSizeCategory = true
+        thirdButton.titleLabel?.adjustsFontForContentSizeCategory = true
+        fourthButton.titleLabel?.adjustsFontForContentSizeCategory = true
     }
     
     // MARK: - Actions
@@ -75,8 +79,9 @@ class QuestionViewController: UIViewController {
     
     //MARK: - Methods
     func youLose(){
-        performSegue(withIdentifier: "toIntroVC", sender: nil)
         presentLostAlert()
+ 
+       
         
     }
     
@@ -90,7 +95,7 @@ class QuestionViewController: UIViewController {
     }
     
     func loadQuestion(){
-        question = dataSource![questionIndex]
+        question = dataSource[questionIndex]
         questionLabel.text = question?.question
         questionNumberLabel.text = String("\(question!.questionNumber)")
         setupButtons()
@@ -98,10 +103,18 @@ class QuestionViewController: UIViewController {
     
     func setupButtons() {
         guard let question = question else {return}
-        firstButton.titleLabel?.text = question.answers[0]
-        secondButton.titleLabel?.text = question.answers[1]
-        thirdButton.titleLabel?.text = question.answers[2]
-        fourthButton.titleLabel?.text = question.answers[3]
+        firstButton.setTitle(question.answers[0], for: .normal)
+        secondButton.setTitle(question.answers[1], for: .normal)
+        thirdButton.setTitle(question.answers[2], for: .normal)
+        fourthButton.setTitle(question.answers[3], for: .normal)
+        firstButton.titleLabel?.adjustsFontForContentSizeCategory = true
+        secondButton.titleLabel?.adjustsFontForContentSizeCategory = true
+        thirdButton.titleLabel?.adjustsFontForContentSizeCategory = true
+        fourthButton.titleLabel?.adjustsFontForContentSizeCategory = true
+        firstButton.contentEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        secondButton.contentEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        thirdButton.contentEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        
     }
     
     func checkAnswer(_ int: Int){
