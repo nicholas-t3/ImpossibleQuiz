@@ -145,7 +145,7 @@
                                             <color key="titleColor" systemColor="systemGreenColor"/>
                                         </state>
                                         <connections>
-                                            <segue destination="DvR-Xs-paZ" kind="show" id="plr-Le-5EI"/>
+                                            <segue destination="DvR-Xs-paZ" kind="show" identifier="easySegue" id="plr-Le-5EI"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2A-Hc-Zzh">
@@ -155,7 +155,7 @@
                                             <color key="titleColor" red="1" green="0.85766573561489623" blue="0.072257341493877969" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
-                                            <segue destination="DvR-Xs-paZ" kind="show" id="dnT-QS-kxX"/>
+                                            <segue destination="DvR-Xs-paZ" kind="show" identifier="mediumSegue" id="dnT-QS-kxX"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9e-94-BjR">
@@ -165,7 +165,7 @@
                                             <color key="titleColor" systemColor="systemRedColor"/>
                                         </state>
                                         <connections>
-                                            <segue destination="DvR-Xs-paZ" kind="show" id="cga-BR-9dD"/>
+                                            <segue destination="DvR-Xs-paZ" kind="show" identifier="hardSegue" id="cga-BR-9dD"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -203,7 +203,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="dnT-QS-kxX"/>
+        <segue reference="cga-BR-9dD"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="answer_box_left" width="792" height="267"/>
