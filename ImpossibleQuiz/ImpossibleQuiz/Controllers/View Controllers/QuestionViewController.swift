@@ -36,7 +36,7 @@ class QuestionViewController: UIViewController {
             }
         }
     }
-
+    
     
     // MARK: - Outlets
     @IBOutlet weak var livesLabel: UILabel!
@@ -51,10 +51,6 @@ class QuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadQuestion()
-        firstButton.titleLabel?.adjustsFontForContentSizeCategory = true
-        secondButton.titleLabel?.adjustsFontForContentSizeCategory = true
-        thirdButton.titleLabel?.adjustsFontForContentSizeCategory = true
-        fourthButton.titleLabel?.adjustsFontForContentSizeCategory = true
     }
     
     // MARK: - Actions
@@ -98,14 +94,14 @@ class QuestionViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
     
-//    func presentCrashAlert(){
-//        let alertController = UIAlertController(title: "Uh-oh", message: "You lost so much that the game broke.", preferredStyle: .alert)
-//        let okAction = UIAlertAction(title: "Bye?", style: .default) { (action) in
-//            self.questionLabel.text = self.crash!
-//        }
-//        alertController.addAction(okAction)
-//        present(alertController, animated: true, completion: nil)
-//    }
+    //    func presentCrashAlert(){
+    //        let alertController = UIAlertController(title: "Uh-oh", message: "You lost so much that the game broke.", preferredStyle: .alert)
+    //        let okAction = UIAlertAction(title: "Bye?", style: .default) { (action) in
+    //            self.questionLabel.text = self.crash!
+    //        }
+    //        alertController.addAction(okAction)
+    //        present(alertController, animated: true, completion: nil)
+    //    }
     
     func loadQuestion(){
         question = dataSource[questionIndex]
@@ -120,13 +116,14 @@ class QuestionViewController: UIViewController {
         secondButton.setTitle(question.answers[1], for: .normal)
         thirdButton.setTitle(question.answers[2], for: .normal)
         fourthButton.setTitle(question.answers[3], for: .normal)
-        firstButton.titleLabel?.adjustsFontForContentSizeCategory = true
-        secondButton.titleLabel?.adjustsFontForContentSizeCategory = true
-        thirdButton.titleLabel?.adjustsFontForContentSizeCategory = true
-        fourthButton.titleLabel?.adjustsFontForContentSizeCategory = true
-        firstButton.contentEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
-        secondButton.contentEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
-        thirdButton.contentEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+        firstButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        firstButton.titleEdgeInsets = UIEdgeInsets(top:0, left:60 , bottom:0 , right:40 )
+        secondButton.titleEdgeInsets = UIEdgeInsets(top:0, left:40 , bottom:0 , right:60 )
+        thirdButton.titleEdgeInsets = UIEdgeInsets(top:0, left:60 , bottom:0 , right:40 )
+        fourthButton.titleEdgeInsets = UIEdgeInsets(top:0, left:40 , bottom:0 , right:60 )
+        secondButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        thirdButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        fourthButton.titleLabel?.adjustsFontSizeToFitWidth = true
         
     }
     
