@@ -84,6 +84,8 @@
 		E1C4CC7A258A88B900580EC2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E1C4CC6E258A88B400580EC2 /* Assets.xcassets */,
+				E1C4CC65258A88B200580EC2 /* AppDelegate.swift */,
 				E1C4CC87258A912100580EC2 /* good_dog */,
 				E1C4CC73258A88B400580EC2 /* Info.plist */,
 			);
@@ -110,7 +112,6 @@
 		E1C4CC7F258A88E200580EC2 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E1C4CC6E258A88B400580EC2 /* Assets.xcassets */,
 				E1C4CC8D258A9A0900580EC2 /* IntroViewController.swift */,
 				E1C4CC9C258A9E3300580EC2 /* QuestionViewController.swift */,
 			);
@@ -120,7 +121,6 @@
 		E1C4CC80258A88E500580EC2 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E1C4CC65258A88B200580EC2 /* AppDelegate.swift */,
 				688E186A258A954900661CCE /* QuestionController.swift */,
 			);
 			path = "Model Controllers";

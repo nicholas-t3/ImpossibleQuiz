@@ -117,11 +117,12 @@
                         <outlet property="questionNumberLabel" destination="o1c-Mw-AUT" id="F97-OB-jIh"/>
                         <outlet property="secondButton" destination="ioT-Zu-cNO" id="paf-Zs-72I"/>
                         <outlet property="thirdButton" destination="eux-ju-XE5" id="TMR-yX-vvy"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toIntroVC" id="1D2-9O-Wku"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9he-XO-HSj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-204.24107142857142" y="918.84057971014499"/>
+            <point key="canvasLocation" x="-267" y="1374"/>
         </scene>
         <!--Intro View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -186,6 +187,7 @@
                             <constraint firstItem="LpH-1B-UvY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.85" id="cJt-th-DXO"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="mOx-KL-Y24"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="N7D-l3-Joy">
@@ -201,7 +203,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="plr-Le-5EI"/>
+        <segue reference="dnT-QS-kxX"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="answer_box_left" width="792" height="267"/>
