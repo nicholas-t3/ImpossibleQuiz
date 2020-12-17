@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		688E1867258A8E6C00661CCE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688E1866258A8E6C00661CCE /* Question.swift */; };
+		688E186B258A954900661CCE /* QuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688E186A258A954900661CCE /* QuestionController.swift */; };
 		E1C4CC66258A88B200580EC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C4CC65258A88B200580EC2 /* AppDelegate.swift */; };
 		E1C4CC68258A88B200580EC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C4CC67258A88B200580EC2 /* SceneDelegate.swift */; };
 		E1C4CC6D258A88B200580EC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1C4CC6B258A88B200580EC2 /* Main.storyboard */; };
 		E1C4CC6F258A88B400580EC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C4CC6E258A88B400580EC2 /* Assets.xcassets */; };
 		E1C4CC72258A88B400580EC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1C4CC70258A88B400580EC2 /* LaunchScreen.storyboard */; };
+		E1C4CC88258A912100580EC2 /* good_dog in Resources */ = {isa = PBXBuildFile; fileRef = E1C4CC87258A912100580EC2 /* good_dog */; };
+		E1C4CC8E258A9A0900580EC2 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C4CC8D258A9A0900580EC2 /* IntroViewController.swift */; };
+		E1C4CC97258A9CB700580EC2 /* GOODDP__.TTF in Resources */ = {isa = PBXBuildFile; fileRef = E1C4CC93258A9CB700580EC2 /* GOODDP__.TTF */; };
+		E1C4CC98258A9CB700580EC2 /* GOODDOGC.TXT in Resources */ = {isa = PBXBuildFile; fileRef = E1C4CC94258A9CB700580EC2 /* GOODDOGC.TXT */; };
+		E1C4CC99258A9CB700580EC2 /* GOODDC__.TTF in Resources */ = {isa = PBXBuildFile; fileRef = E1C4CC95258A9CB700580EC2 /* GOODDC__.TTF */; };
+		E1C4CC9A258A9CB700580EC2 /* GOODDOGP.TXT in Resources */ = {isa = PBXBuildFile; fileRef = E1C4CC96258A9CB700580EC2 /* GOODDOGP.TXT */; };
+		E1C4CC9D258A9E3300580EC2 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C4CC9C258A9E3300580EC2 /* QuestionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		688E1866258A8E6C00661CCE /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		688E186A258A954900661CCE /* QuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionController.swift; sourceTree = "<group>"; };
 		E1C4CC62258A88B200580EC2 /* ImpossibleQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImpossibleQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C4CC65258A88B200580EC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1C4CC67258A88B200580EC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +33,13 @@
 		E1C4CC6E258A88B400580EC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1C4CC71258A88B400580EC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1C4CC73258A88B400580EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1C4CC87258A912100580EC2 /* good_dog */ = {isa = PBXFileReference; lastKnownFileType = folder; path = good_dog; sourceTree = "<group>"; };
+		E1C4CC8D258A9A0900580EC2 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		E1C4CC93258A9CB700580EC2 /* GOODDP__.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = GOODDP__.TTF; sourceTree = "<group>"; };
+		E1C4CC94258A9CB700580EC2 /* GOODDOGC.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GOODDOGC.TXT; sourceTree = "<group>"; };
+		E1C4CC95258A9CB700580EC2 /* GOODDC__.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = GOODDC__.TTF; sourceTree = "<group>"; };
+		E1C4CC96258A9CB700580EC2 /* GOODDOGP.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GOODDOGP.TXT; sourceTree = "<group>"; };
+		E1C4CC9C258A9E3300580EC2 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +83,10 @@
 		E1C4CC7A258A88B900580EC2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E1C4CC92258A9CB700580EC2 /* good_dog */,
+				E1C4CC6E258A88B400580EC2 /* Assets.xcassets */,
+				E1C4CC65258A88B200580EC2 /* AppDelegate.swift */,
+				E1C4CC87258A912100580EC2 /* good_dog */,
 				E1C4CC73258A88B400580EC2 /* Info.plist */,
 			);
 			path = Resources;
@@ -90,7 +112,8 @@
 		E1C4CC7F258A88E200580EC2 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E1C4CC6E258A88B400580EC2 /* Assets.xcassets */,
+				E1C4CC8D258A9A0900580EC2 /* IntroViewController.swift */,
+				E1C4CC9C258A9E3300580EC2 /* QuestionViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -98,7 +121,7 @@
 		E1C4CC80258A88E500580EC2 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E1C4CC65258A88B200580EC2 /* AppDelegate.swift */,
+				688E186A258A954900661CCE /* QuestionController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -115,9 +138,22 @@
 		E1C4CC85258A892300580EC2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E1C4CC67258A88B200580EC2 /* SceneDelegate.swift */,
+				688E1866258A8E6C00661CCE /* Question.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E1C4CC92258A9CB700580EC2 /* good_dog */ = {
+			isa = PBXGroup;
+			children = (
+				E1C4CC67258A88B200580EC2 /* SceneDelegate.swift */,
+				E1C4CC93258A9CB700580EC2 /* GOODDP__.TTF */,
+				E1C4CC94258A9CB700580EC2 /* GOODDOGC.TXT */,
+				E1C4CC95258A9CB700580EC2 /* GOODDC__.TTF */,
+				E1C4CC96258A9CB700580EC2 /* GOODDOGP.TXT */,
+			);
+			name = good_dog;
+			path = ../good_dog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +215,12 @@
 			files = (
 				E1C4CC72258A88B400580EC2 /* LaunchScreen.storyboard in Resources */,
 				E1C4CC6F258A88B400580EC2 /* Assets.xcassets in Resources */,
+				E1C4CC88258A912100580EC2 /* good_dog in Resources */,
 				E1C4CC6D258A88B200580EC2 /* Main.storyboard in Resources */,
+				E1C4CC98258A9CB700580EC2 /* GOODDOGC.TXT in Resources */,
+				E1C4CC9A258A9CB700580EC2 /* GOODDOGP.TXT in Resources */,
+				E1C4CC99258A9CB700580EC2 /* GOODDC__.TTF in Resources */,
+				E1C4CC97258A9CB700580EC2 /* GOODDP__.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,8 +231,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				688E1867258A8E6C00661CCE /* Question.swift in Sources */,
+				E1C4CC9D258A9E3300580EC2 /* QuestionViewController.swift in Sources */,
 				E1C4CC66258A88B200580EC2 /* AppDelegate.swift in Sources */,
 				E1C4CC68258A88B200580EC2 /* SceneDelegate.swift in Sources */,
+				688E186B258A954900661CCE /* QuestionController.swift in Sources */,
+				E1C4CC8E258A9A0900580EC2 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -323,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -339,7 +384,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 34JQRZPN3X;
+				DEVELOPMENT_TEAM = MB9J78CVZ9;
 				INFOPLIST_FILE = ImpossibleQuiz/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -358,7 +403,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 34JQRZPN3X;
+				DEVELOPMENT_TEAM = MB9J78CVZ9;
 				INFOPLIST_FILE = ImpossibleQuiz/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
