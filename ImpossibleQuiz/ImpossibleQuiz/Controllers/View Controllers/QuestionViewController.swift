@@ -76,7 +76,7 @@ class QuestionViewController: UIViewController {
     //MARK: - Methods
     func youLose(){
         QuestionController.sharedInstance.amountOfLosses += 1
-        if QuestionController.sharedInstance.amountOfLosses == 5 {
+        if QuestionController.sharedInstance.amountOfLosses > 5 {
             presentCrashAlert()
         } else {
             presentLostAlert()
@@ -85,7 +85,7 @@ class QuestionViewController: UIViewController {
     
     func presentLostAlert(){
         totalScore = score - randomNumber
-        let alertController = UIAlertController(title: "You lost!", message: "Your score was \(score), but we took off \(randomNumber) points because we think you can do better. Looks like your score was \(totalScore)", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "You lost!", message: "Your score was \(score), but we took off \(randomNumber) points because we think you can do better. Looks like your score was \(totalScore)!", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style: .default) { (action) in
             self.performSegue(withIdentifier: "toIntroVC", sender: nil)
         }
@@ -114,7 +114,7 @@ class QuestionViewController: UIViewController {
             questionNumberLabel.text = String("\(question!.questionNumber)")
             setupButtons()
         } else {
-            let alertController = UIAlertController(title: "You won!", message: "Great job. Your score was \(score) , but you can do better. Try another level", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "You won!", message: "Great job. Your score was \(score), but you can do better. Try another level, if you dare.", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "Ok", style: .default) { (action) in
                 self.performSegue(withIdentifier: "toIntroVC", sender: nil)
             }
