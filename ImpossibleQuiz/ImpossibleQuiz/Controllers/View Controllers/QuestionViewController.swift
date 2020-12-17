@@ -119,7 +119,7 @@ class QuestionViewController: UIViewController {
             setupButtons()
         }
         else {
-            let alertController = UIAlertController(title: "You won!", message: "Great job, but you can do better. Try another level", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "You won!", message: "Great job. Your score was \(score) , but you can do better. Try another level", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "Ok", style: .default) { (action) in
                 self.performSegue(withIdentifier: "toIntroVC", sender: nil)
             }
