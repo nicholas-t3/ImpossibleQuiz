@@ -42,6 +42,7 @@ class QuestionController {
     
     var hardQuestion = [Question(questionNumber: 1, question: "WHICH IS TRUE", answers: ["PSP > DS","DS > PSP","PSP = DS","EGG > 28"], correctAnswer: 3),
                         Question(questionNumber: 2, question: "HOW MANY QUESTIONS DOES THIS QUIZ HAVE", answers: ["100", "200", "NO ONE KNOWS THAT","YOU CAN'T REALLY CLASS THIS AS A QUIZ.."], correctAnswer: 2),
+
                         Question(questionNumber: 3, question: "WHAT DO YOU GET IF YOU PUT A NUMBER 1 INTO YOUR CALCULATOR AND THEN A NUMBER 2", answers: ["3", "12", "A RIGHT MESS", "ERROR!"], correctAnswer: 3),
                         Question(questionNumber: 4, question: "HOW MANY TIMES HAVE YOU HAD TO RESTART", answers: ["NONE!", "1-5 TIMES", "6-9 TIMES","NONCE"], correctAnswer: 3),
                         Question(questionNumber: 5, question: "REMEMBER: BLUE YELLOW RED BLUE YELLOW BLUE RED", answers: ["OK", "WHY?", "I CAN'T","UGH"], correctAnswer: 0),
