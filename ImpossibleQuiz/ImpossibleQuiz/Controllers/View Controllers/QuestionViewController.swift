@@ -12,7 +12,10 @@ class QuestionViewController: UIViewController {
     // MARK: - Properties
     var question: Question?
     var questionIndex = 0
+    var score: Int = 0
     var mode: Int?
+    var totalScore = 0
+    var randomNumber = Int.random(in: 10..<20)
     var crash: String?
     var dataSource: [Question] {
         switch mode {
@@ -42,7 +45,7 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var livesLabel: UILabel!
     @IBOutlet weak var questionNumberLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
-    
+    @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var firstButton: UIButton!
     @IBOutlet weak var secondButton: UIButton!
     @IBOutlet weak var thirdButton: UIButton!
@@ -88,7 +91,8 @@ class QuestionViewController: UIViewController {
     }
     
     func presentLostAlert(){
-        let alertController = UIAlertController(title: "You lost!", message: "Try to be smarter next time.", preferredStyle: .alert)
+        totalScore = score - randomNumber
+        let alertController = UIAlertController(title: "You lost!", message: "Your score was \(score), but we took off \(randomNumber) points because we think you can do better. Looks like your score was \(totalScore)", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style: .default) { (action) in
             self.performSegue(withIdentifier: "toIntroVC", sender: nil)
         }
@@ -103,6 +107,7 @@ class QuestionViewController: UIViewController {
     //        }
     //        alertController.addAction(okAction)
     //        present(alertController, animated: true, completion: nil)
+    //comment
     //    }
     
     func loadQuestion(){
@@ -114,7 +119,7 @@ class QuestionViewController: UIViewController {
             setupButtons()
         }
         else {
-            let alertController = UIAlertController(title: "You won!", message: "Great job. But you can do better.Try another level", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "You won!", message: "Great job, but you can do better. Try another level", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "Ok", style: .default) { (action) in
                 self.performSegue(withIdentifier: "toIntroVC", sender: nil)
             }
@@ -142,7 +147,10 @@ class QuestionViewController: UIViewController {
     
     func checkAnswer(_ int: Int){
         if int == question?.correctAnswer {
+            let newRandomNumber = Int.random(in: 2..<20)
             questionIndex += 1
+            score += (5 * newRandomNumber)
+            scoreLabel.text = "Score: \(score)"
             loadQuestion()
         } else {
             lives -= 1

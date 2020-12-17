@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -95,6 +95,12 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ead-7O-5bA">
+                                <rect key="frame" x="727.5" y="328.5" width="142.5" height="56.5"/>
+                                <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="56"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Wkt-DH-FSI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -106,7 +112,9 @@
                             <constraint firstItem="SXY-AY-hG9" firstAttribute="leading" secondItem="Wkt-DH-FSI" secondAttribute="leading" id="SvV-6c-RpO"/>
                             <constraint firstItem="Wkt-DH-FSI" firstAttribute="bottom" secondItem="SXY-AY-hG9" secondAttribute="bottom" id="XFF-M9-6xY"/>
                             <constraint firstItem="o1c-Mw-AUT" firstAttribute="top" secondItem="Wkt-DH-FSI" secondAttribute="top" constant="2" id="aPU-hc-eBv"/>
+                            <constraint firstItem="Wkt-DH-FSI" firstAttribute="bottom" secondItem="Ead-7O-5bA" secondAttribute="bottom" constant="8" id="ffe-vC-IzS"/>
                             <constraint firstItem="uqd-dv-Xdv" firstAttribute="width" secondItem="Wkt-DH-FSI" secondAttribute="width" multiplier="0.8" id="fqg-TI-9Zc"/>
+                            <constraint firstItem="Ead-7O-5bA" firstAttribute="trailing" secondItem="Wkt-DH-FSI" secondAttribute="trailing" constant="18" id="iOS-t3-aLC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZRb-hG-OiS"/>
@@ -116,6 +124,7 @@
                         <outlet property="livesLabel" destination="SXY-AY-hG9" id="NgT-Bk-lQK"/>
                         <outlet property="questionLabel" destination="e3d-PK-gBZ" id="xwx-HZ-OcM"/>
                         <outlet property="questionNumberLabel" destination="o1c-Mw-AUT" id="F97-OB-jIh"/>
+                        <outlet property="scoreLabel" destination="Ead-7O-5bA" id="2Gc-GB-zPT"/>
                         <outlet property="secondButton" destination="ioT-Zu-cNO" id="paf-Zs-72I"/>
                         <outlet property="thirdButton" destination="eux-ju-XE5" id="TMR-yX-vvy"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="toIntroVC" id="1D2-9O-Wku"/>
