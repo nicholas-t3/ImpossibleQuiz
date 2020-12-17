@@ -71,6 +71,8 @@ class QuestionViewController: UIViewController {
     
     @IBAction func fourthButtonTapped(_ sender: Any) {
         checkAnswer(3)
+        
+        
     }
     
     

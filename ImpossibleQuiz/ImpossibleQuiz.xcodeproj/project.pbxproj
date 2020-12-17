@@ -72,7 +72,6 @@
 		E1C4CC64258A88B200580EC2 /* ImpossibleQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				E1C4CC92258A9CB700580EC2 /* good_dog */,
 				E1C4CC7A258A88B900580EC2 /* Resources */,
 				E1C4CC85258A892300580EC2 /* Models */,
 				E1C4CC81258A88EF00580EC2 /* Controllers */,
@@ -84,6 +83,7 @@
 		E1C4CC7A258A88B900580EC2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E1C4CC92258A9CB700580EC2 /* good_dog */,
 				E1C4CC6E258A88B400580EC2 /* Assets.xcassets */,
 				E1C4CC65258A88B200580EC2 /* AppDelegate.swift */,
 				E1C4CC87258A912100580EC2 /* good_dog */,
@@ -138,7 +138,6 @@
 		E1C4CC85258A892300580EC2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E1C4CC67258A88B200580EC2 /* SceneDelegate.swift */,
 				688E1866258A8E6C00661CCE /* Question.swift */,
 			);
 			path = Models;
@@ -147,12 +146,14 @@
 		E1C4CC92258A9CB700580EC2 /* good_dog */ = {
 			isa = PBXGroup;
 			children = (
+				E1C4CC67258A88B200580EC2 /* SceneDelegate.swift */,
 				E1C4CC93258A9CB700580EC2 /* GOODDP__.TTF */,
 				E1C4CC94258A9CB700580EC2 /* GOODDOGC.TXT */,
 				E1C4CC95258A9CB700580EC2 /* GOODDC__.TTF */,
 				E1C4CC96258A9CB700580EC2 /* GOODDOGP.TXT */,
 			);
-			path = good_dog;
+			name = good_dog;
+			path = ../good_dog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

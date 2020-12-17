@@ -9,11 +9,13 @@ import UIKit
 
 class IntroViewController: UIViewController {
 
+    // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
 
+    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "easySegue"{
@@ -29,4 +31,5 @@ class IntroViewController: UIViewController {
                 destinationVC.mode = 2
         }
     }
-}
+    
+} // End of class
