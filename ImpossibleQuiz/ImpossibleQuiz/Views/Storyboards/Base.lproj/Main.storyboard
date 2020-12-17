@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -46,7 +46,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iuU-Xf-udG">
                                         <rect key="frame" x="0.0" y="0.0" width="323" height="196.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afG-Tr-zXh">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afG-Tr-zXh">
                                                 <rect key="frame" x="0.0" y="0.0" width="323" height="98"/>
                                                 <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="60"/>
                                                 <state key="normal" title="Button Title" backgroundImage="answer_box_left">
@@ -56,7 +56,7 @@
                                                     <action selector="firstButtonTapped:" destination="DvR-Xs-paZ" eventType="touchUpInside" id="aUv-gI-kQi"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eux-ju-XE5">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eux-ju-XE5">
                                                 <rect key="frame" x="0.0" y="98" width="323" height="98.5"/>
                                                 <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="60"/>
                                                 <state key="normal" title="Button Title" backgroundImage="answer_box_left">
@@ -71,7 +71,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QZs-lU-naK">
                                         <rect key="frame" x="323" y="0.0" width="323" height="196.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioT-Zu-cNO">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioT-Zu-cNO">
                                                 <rect key="frame" x="0.0" y="0.0" width="323" height="98"/>
                                                 <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="60"/>
                                                 <state key="normal" title="Button Title" backgroundImage="answer_box_right">
@@ -81,7 +81,7 @@
                                                     <action selector="secondButtonTapped:" destination="DvR-Xs-paZ" eventType="touchUpInside" id="pAR-SN-YHP"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ii-tW-1dZ">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ii-tW-1dZ">
                                                 <rect key="frame" x="0.0" y="98" width="323" height="98.5"/>
                                                 <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="60"/>
                                                 <state key="normal" title="ButtonTitle" backgroundImage="answer_box_right">
@@ -148,7 +148,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="LpH-1B-UvY">
                                 <rect key="frame" x="67" y="214" width="762" height="160"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgA-Dc-W6t">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgA-Dc-W6t">
                                         <rect key="frame" x="0.0" y="0.0" width="243.5" height="160"/>
                                         <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="60"/>
                                         <state key="normal" title="Easy" backgroundImage="easy_button">
@@ -158,17 +158,17 @@
                                             <segue destination="DvR-Xs-paZ" kind="show" identifier="easySegue" id="plr-Le-5EI"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2A-Hc-Zzh">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2A-Hc-Zzh">
                                         <rect key="frame" x="259.5" y="0.0" width="243" height="160"/>
-                                        <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="50"/>
+                                        <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="60"/>
                                         <state key="normal" title="Medium" backgroundImage="medium_button">
-                                            <color key="titleColor" red="1" green="0.85766573561489623" blue="0.072257341493877969" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="titleColor" red="1" green="0.80110809168543162" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <segue destination="DvR-Xs-paZ" kind="show" identifier="mediumSegue" id="dnT-QS-kxX"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9e-94-BjR">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9e-94-BjR">
                                         <rect key="frame" x="518.5" y="0.0" width="243.5" height="160"/>
                                         <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="60"/>
                                         <state key="normal" title="Hard" backgroundImage="hard_button">
