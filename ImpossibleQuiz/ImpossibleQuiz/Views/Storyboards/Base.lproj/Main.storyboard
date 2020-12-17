@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1c-Mw-AUT">
-                                <rect key="frame" x="44" y="2" width="31.5" height="96"/>
+                                <rect key="frame" x="44" y="2" width="80.5" height="112"/>
                                 <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="96"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -35,7 +35,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lives: 3" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXY-AY-hG9">
-                                <rect key="frame" x="44" y="336.5" width="135.5" height="56.5"/>
+                                <rect key="frame" x="44" y="327.5" width="192" height="65.5"/>
                                 <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="56"/>
                                 <color key="textColor" systemColor="systemPurpleColor"/>
                                 <nil key="highlightedColor"/>
@@ -96,7 +96,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ead-7O-5bA">
-                                <rect key="frame" x="727.5" y="328.5" width="142.5" height="56.5"/>
+                                <rect key="frame" x="661.5" y="319.5" width="208.5" height="65.5"/>
                                 <fontDescription key="fontDescription" name="GoodDogPlain" family="GoodDog Plain" pointSize="56"/>
                                 <color key="textColor" systemColor="systemGreenColor"/>
                                 <nil key="highlightedColor"/>
@@ -132,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9he-XO-HSj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-267.1875" y="1373.913043478261"/>
+            <point key="canvasLocation" x="-248" y="1046"/>
         </scene>
         <!--Intro View Controller-->
         <scene sceneID="tne-QT-ifu">
