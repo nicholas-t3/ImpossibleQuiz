@@ -104,10 +104,21 @@ class QuestionViewController: UIViewController {
     //    }
     
     func loadQuestion(){
-        question = dataSource[questionIndex]
-        questionLabel.text = question?.question
-        questionNumberLabel.text = String("\(question!.questionNumber)")
-        setupButtons()
+        
+        if questionIndex < dataSource.count {
+            question = dataSource[questionIndex]
+            questionLabel.text = question?.question
+            questionNumberLabel.text = String("\(question!.questionNumber)")
+            setupButtons()
+        }
+        else {
+            let alertController = UIAlertController(title: "You won!", message: "Great job. But you can do better.Try another level", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "Ok", style: .default) { (action) in
+                self.performSegue(withIdentifier: "toIntroVC", sender: nil)
+            }
+            alertController.addAction(okAction)
+            present(alertController, animated: true, completion: nil)
+        }
     }
     
     func setupButtons() {
