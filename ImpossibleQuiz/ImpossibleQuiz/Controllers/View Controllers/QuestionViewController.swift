@@ -40,7 +40,6 @@ class QuestionViewController: UIViewController {
         }
     }
     
-    
     // MARK: - Outlets
     @IBOutlet weak var livesLabel: UILabel!
     @IBOutlet weak var questionNumberLabel: UILabel!
@@ -51,22 +50,20 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var thirdButton: UIButton!
     @IBOutlet weak var fourthButton: UIButton!
     
+    // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         loadQuestion()
     }
     
     // MARK: - Actions
-    
     @IBAction func firstButtonTapped(_ sender: Any) {
         checkAnswer(0)
-        
     }
     
     @IBAction func secondButtonTapped(_ sender: Any) {
         checkAnswer(1)
     }
-    
     
     @IBAction func thirdButtonTapped(_ sender: Any) {
         checkAnswer(2)
@@ -74,20 +71,16 @@ class QuestionViewController: UIViewController {
     
     @IBAction func fourthButtonTapped(_ sender: Any) {
         checkAnswer(3)
-        
-        
     }
-    
     
     //MARK: - Methods
     func youLose(){
         QuestionController.sharedInstance.amountOfLosses += 1
         if QuestionController.sharedInstance.amountOfLosses == 5 {
-            presentLostAlert()
+            presentCrashAlert()
         } else {
             presentLostAlert()
         }
-        
     }
     
     func presentLostAlert(){
@@ -100,15 +93,18 @@ class QuestionViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
     
-    //    func presentCrashAlert(){
-    //        let alertController = UIAlertController(title: "Uh-oh", message: "You lost so much that the game broke.", preferredStyle: .alert)
-    //        let okAction = UIAlertAction(title: "Bye?", style: .default) { (action) in
-    //            self.questionLabel.text = self.crash!
-    //        }
-    //        alertController.addAction(okAction)
-    //        present(alertController, animated: true, completion: nil)
-    //comment
-    //    }
+    func presentCrashAlert(){
+        let alertController = UIAlertController(title: "Uh-oh", message: "Do you give up?", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "No! Again!", style: .default) { (action) in
+            self.performSegue(withIdentifier: "toIntroVC", sender: nil)
+        }
+        let giveUpAction = UIAlertAction(title: "I give up.", style: .default) { (action) in
+            self.questionLabel.text = self.crash! //Lol, thanks for playing! ->
+        }
+        alertController.addAction(okAction)
+        alertController.addAction(giveUpAction)
+        present(alertController, animated: true, completion: nil)
+    }
     
     func loadQuestion(){
         
@@ -117,8 +113,7 @@ class QuestionViewController: UIViewController {
             questionLabel.text = question?.question
             questionNumberLabel.text = String("\(question!.questionNumber)")
             setupButtons()
-        }
-        else {
+        } else {
             let alertController = UIAlertController(title: "You won!", message: "Great job. Your score was \(score) , but you can do better. Try another level", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "Ok", style: .default) { (action) in
                 self.performSegue(withIdentifier: "toIntroVC", sender: nil)
@@ -142,7 +137,6 @@ class QuestionViewController: UIViewController {
         secondButton.titleLabel?.adjustsFontSizeToFitWidth = true
         thirdButton.titleLabel?.adjustsFontSizeToFitWidth = true
         fourthButton.titleLabel?.adjustsFontSizeToFitWidth = true
-        
     }
     
     func checkAnswer(_ int: Int){
